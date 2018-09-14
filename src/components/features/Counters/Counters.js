@@ -4,12 +4,18 @@ import { Button } from "../../common";
 
 export default class Counters extends Component {
   render() {
-    const { counter, description, increment, decrement } = this.props;
+    const {
+      counter,
+      description,
+      counterMultiplyedByMode,
+      increment,
+      decrement
+    } = this.props;
     return (
       <div>
-        <p>
-          {counter} ({description})
-        </p>
+        <p>Counter: {counter} </p>
+        <p>Description: {description}</p>
+        <p>counter * mode = {counterMultiplyedByMode}</p>
         <p>
           <Button type="button" onClick={() => increment()}>
             Up

@@ -1,5 +1,12 @@
 import { createSelector } from "reselect";
-import { counterValueSelector } from "../../../common/selectors/counter";
+import { modeValueSelector } from "../../../common/selectors/mode";
+
+const counterSelector = state => state.counter;
+
+export const counterValueSelector = createSelector(
+  counterSelector,
+  counter => counter.value
+);
 
 export const counterDescriptionSelector = createSelector(
   counterValueSelector,
@@ -12,4 +19,10 @@ export const counterDescriptionSelector = createSelector(
 
     return "Equall to zero";
   }
+);
+
+export const counterMultiplyedByModeSelector = createSelector(
+  counterValueSelector,
+  modeValueSelector,
+  (counter, mode) => counter * mode
 );

@@ -10,7 +10,7 @@ export const decrement = () => ({
 });
 
 const initialState = {
-  counter: 0
+  value: 0
 };
 
 export default (state = initialState, action) => {
@@ -18,14 +18,14 @@ export default (state = initialState, action) => {
     case INCREMENT_COUNT: {
       return {
         ...state,
-        counter: state.counter + 1
+        value: state.value + 1
       };
     }
 
     case DECREMENT_COUNT: {
       return {
         ...state,
-        counter: state.counter - 1
+        value: state.value - 1
       };
     }
 

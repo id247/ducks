@@ -1,10 +1,11 @@
 import { connect } from "react-redux";
-import { counterValueSelector } from "../../../common/selectors/counter";
+import { modeValueSelector } from "../../../common/selectors/mode";
+import { updateMode } from "../../../common/ducks/mode";
 import Welcome from "./Welcome";
 
 export default connect(
   state => ({
-    counter: counterValueSelector(state)
+    mode: modeValueSelector(state)
   }),
-  {}
+  { updateMode }
 )(Welcome);

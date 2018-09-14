@@ -5,8 +5,7 @@ import { createBrowserHistory } from "history";
 
 import store from "./state/store";
 
-import routes from "./routes";
-import { mapRoutes } from "./utils";
+import { routes, mapRoutes } from "./routes";
 
 const history = createBrowserHistory();
 

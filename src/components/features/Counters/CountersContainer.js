@@ -1,7 +1,10 @@
 import { connect } from "react-redux";
 import { increment, decrement } from "./ducks";
-import { counterValueSelector } from "../../../common/selectors/counter";
-import { counterDescriptionSelector } from "./selectors";
+import {
+  counterValueSelector,
+  counterDescriptionSelector,
+  counterMultiplyedByModeSelector
+} from "./selectors";
 import Counters from "./Counters";
 
 const mapDispatchToProps = {
@@ -12,7 +15,8 @@ const mapDispatchToProps = {
 export default connect(
   state => ({
     counter: counterValueSelector(state),
-    description: counterDescriptionSelector(state)
+    description: counterDescriptionSelector(state),
+    counterMultiplyedByMode: counterMultiplyedByModeSelector(state)
   }),
   mapDispatchToProps
 )(Counters);
