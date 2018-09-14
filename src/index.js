@@ -1,7 +1,6 @@
-import { render } from 'react-dom';
+import React from "react";
+import { render } from "react-dom";
 
-import app, { registerServiceWorker } from './bootstrap';
+import App from "./App";
 
-render(app(), document.getElementById('root'));
-
-registerServiceWorker();
+render(<App />, document.getElementById("root"));
