@@ -1,7 +1,6 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import { Button } from "../../common";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Button } from '../../common';
 
 export default class Counters extends Component {
   static PropTypes = {
@@ -9,7 +8,7 @@ export default class Counters extends Component {
     description: PropTypes.string.isRequired,
     counterMultiplyedByMode: PropTypes.number.isRequired,
     increment: PropTypes.func.isRequired,
-    decrement: PropTypes.func.isRequired
+    decrement: PropTypes.func.isRequired,
   };
 
   render() {
@@ -18,7 +17,7 @@ export default class Counters extends Component {
       description,
       counterMultiplyedByMode,
       increment,
-      decrement
+      decrement,
     } = this.props;
     return (
       <div>
@@ -28,7 +27,7 @@ export default class Counters extends Component {
         <p>
           <Button type="button" onClick={() => increment()}>
             Up
-          </Button>{" "}
+          </Button>{' '}
           <Button type="button" onClick={() => decrement()}>
             Down
           </Button>

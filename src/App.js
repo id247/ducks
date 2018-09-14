@@ -1,11 +1,11 @@
-import React from "react";
-import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
-import store from "./state/store";
+import store from './state/store';
 
-import { routes, mapRoutes } from "./routes";
+import { routes, mapRoutes } from './routes';
 
 const history = createBrowserHistory();
 

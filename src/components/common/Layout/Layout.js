@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-import logo from "./assets/img/logo.svg";
-import "./styles.css";
+import logo from './assets/img/logo.svg';
+import './styles.css';
 
 export default class Layout extends Component {
   static PropTypes = {
     pageTitle: PropTypes.string.isRequired,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   render() {

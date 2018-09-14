@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Button extends Component {
   static PropTypes = {
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   render() {

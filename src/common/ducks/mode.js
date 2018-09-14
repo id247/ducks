@@ -1,14 +1,14 @@
-import { MODES } from "../constants/mode";
+import { MODES } from '../constants/mode';
 
-const UPDATE_MODE = "UPDATE_MODE";
+const UPDATE_MODE = 'UPDATE_MODE';
 
 export const updateMode = value => ({
   type: UPDATE_MODE,
-  payload: value
+  payload: value,
 });
 
 const initialState = {
-  value: MODES[0]
+  value: MODES[0],
 };
 
 export default (state = initialState, action) => {
@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
     case UPDATE_MODE: {
       return {
         ...state,
-        value: action.payload
+        value: action.payload,
       };
     }
 

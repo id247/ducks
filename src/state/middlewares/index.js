@@ -9,4 +9,3 @@ const composedMiddlewares = reduxDevtoolsWrapper(
 );
 
 export default composedMiddlewares;
-

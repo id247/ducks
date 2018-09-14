@@ -1,21 +1,21 @@
-import React from "react";
-import _ from "lodash";
-import { Switch, Route } from "react-router-dom";
-import { Home, Counter } from "../components/pages";
+import React from 'react';
+import _ from 'lodash';
+import { Switch, Route } from 'react-router-dom';
+import { Home, Counter } from '../components/pages';
 
 export const routes = [
   {
-    path: "/",
-    name: "home",
+    path: '/',
+    name: 'home',
     component: Home,
-    exact: true
+    exact: true,
   },
   {
-    path: "/counter",
-    name: "counter",
+    path: '/counter',
+    name: 'counter',
     component: Counter,
-    exact: true
-  }
+    exact: true,
+  },
 ];
 
 const renderRoutes = routes => (
@@ -32,6 +32,6 @@ const renderRoutes = routes => (
 );
 
 export const mapRoutes = routes =>
-  routes && routes.length ? renderRoutes(routes) : "";
+  routes && routes.length ? renderRoutes(routes) : '';
 
 export const routeTo = name => _.find(routes, { name: name }).path;

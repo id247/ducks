@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Layout from "../../common/Layout";
-import Counters from "../../features/Counters";
+import Layout from '../../common/Layout';
+import Counters from '../../features/Counters';
 
 export default class Home extends Component {
   render() {

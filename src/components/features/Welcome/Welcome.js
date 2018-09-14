@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { MODES } from "../../../common/constants/mode";
-import { Label, Radio } from "../../common";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { MODES } from '../../../common/constants/mode';
+import { Label, Radio } from '../../common';
 
 export default class Welcome extends Component {
   static PropTypes = {
     mode: PropTypes.number.isRequired,
-    updateMode: PropTypes.func.isRequired
+    updateMode: PropTypes.func.isRequired,
   };
 
   render() {

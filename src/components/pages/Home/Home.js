@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Layout from "../../common/Layout";
-import Welcome from "../../features/Welcome";
+import Layout from '../../common/Layout';
+import Welcome from '../../features/Welcome';
 
 export default class Home extends Component {
   render() {

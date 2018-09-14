@@ -1,16 +1,16 @@
-const INCREMENT_COUNT = "INCREMENT_COUNT";
-const DECREMENT_COUNT = "DECREMENT_COUNT";
+const INCREMENT_COUNT = 'INCREMENT_COUNT';
+const DECREMENT_COUNT = 'DECREMENT_COUNT';
 
 export const increment = () => ({
-  type: INCREMENT_COUNT
+  type: INCREMENT_COUNT,
 });
 
 export const decrement = () => ({
-  type: DECREMENT_COUNT
+  type: DECREMENT_COUNT,
 });
 
 const initialState = {
-  value: 0
+  value: 0,
 };
 
 export default (state = initialState, action) => {
@@ -18,14 +18,14 @@ export default (state = initialState, action) => {
     case INCREMENT_COUNT: {
       return {
         ...state,
-        value: state.value + 1
+        value: state.value + 1,
       };
     }
 
     case DECREMENT_COUNT: {
       return {
         ...state,
-        value: state.value - 1
+        value: state.value - 1,
       };
     }
 
