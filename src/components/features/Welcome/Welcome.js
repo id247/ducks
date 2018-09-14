@@ -4,6 +4,11 @@ import { MODES } from "../../../common/constants/mode";
 import { Label, Radio } from "../../common";
 
 export default class Welcome extends Component {
+  static PropTypes = {
+    mode: PropTypes.number.isRequired,
+    updateMode: PropTypes.func.isRequired
+  };
+
   render() {
     const { mode, updateMode } = this.props;
 

@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import logo from "./assets/img/logo.svg";
 import "./styles.css";
 
 export default class Layout extends Component {
+  static PropTypes = {
+    pageTitle: PropTypes.string.isRequired,
+    children: PropTypes.node
+  };
+
   render() {
-    const { pageTitle } = this.props;
+    const { pageTitle, children } = this.props;
 
     return (
       <div className="welcome">
@@ -16,7 +22,7 @@ export default class Layout extends Component {
           </Link>
           <h2>{pageTitle}</h2>
         </div>
-        <div className="content">{this.props.children}</div>
+        <div className="content">{children}</div>
       </div>
     );
   }
