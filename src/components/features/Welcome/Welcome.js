@@ -15,7 +15,7 @@ export default class Welcome extends Component {
 
     return (
       <div>
-        Wellcome! You can update counter <Link to="/counter">here</Link>
+        Welcome! You can update counter <Link to="/counter">here</Link>
         <h3>Select mode</h3>
         {MODES.map(value => (
           <p key={value}>
